@@ -38,40 +38,40 @@ export function AccountPage() {
     const { setTheme } = useTheme()
   return (
     (<div
-      className={`flex min-h-[100dvh] flex-col items-center justify-center bg-background transition-all duration-500 ease-in-out transition-background `}>
+      className={`flex min-h-[100dvh] flex-col items-center justify-center bg-background transition-all duration-150 ease-in-out transition-background `}>
       <div
-        className={`w-full max-w-md rounded-lg border border-input bg-card p-6 shadow-lg transition-all duration-500 ease-in-out transition-background`}>
+        className={`w-full max-w-md rounded-lg border border-input bg-card p-6 shadow-lg transition-all duration-150 ease-in-out transition-background`}>
         {isSignup ? (
           <div>
             <div className="mb-6 text-center">
               <h1
-                className={`text-3xl font-bold transition-all duration-500 ease-in-out`}>
+                className={`text-3xl font-bold transition-all duration-150 ease-in-out`}>
                 Sign Up
               </h1>
               <p
-                className={`text-muted-foreground transition-all duration-500 ease-in-out`}>
+                className={`text-muted-foreground transition-all duration-150 ease-in-out`}>
                 Create your account to get started
               </p>
             </div>
-            <form className="space-y-4 transition-all duration-500 ease-in-out">
+            <form className="space-y-4 transition-all duration-300 ease-in-out">
               <div
-                className="grid grid-cols-2 gap-4 transition-all duration-500 ease-in-out">
-                <div className="space-y-2 transition-all duration-500 ease-in-out">
+                className="grid grid-cols-2 gap-4 transition-all duration-300 ease-in-out">
+                <div className="space-y-2 transition-all duration-300 ease-in-out">
                   <Label
                     htmlFor="name"
-                    className={`transition-all duration-500 ease-in-ou`}>
+                    className={`transition-all duration-300 ease-in-ou`}>
                     Name
                   </Label>
                   <Input
                     id="name"
                     placeholder="John Doe"
                     required
-                    className={`transition-all duration-500 ease-in-out`} />
+                    className={`transition-all duration-300 ease-in-out`} />
                 </div>
-                <div className="space-y-2 transition-all duration-500 ease-in-out">
+                <div className="space-y-2 transition-all duration-300 ease-in-out">
                   <Label
                     htmlFor="email"
-                    className={`transition-all duration-500 ease-in-out`}>
+                    className={`transition-all duration-300 ease-in-out`}>
                     Email
                   </Label>
                   <Input
@@ -79,52 +79,52 @@ export function AccountPage() {
                     type="email"
                     placeholder="m@example.com"
                     required
-                    className={`transition-all duration-500 ease-in-out`} />
+                    className={`transition-all duration-300 ease-in-out`} />
                 </div>
               </div>
-              <div className="space-y-2 transition-all duration-500 ease-in-out">
+              <div className="space-y-2 transition-all duration-300 ease-in-out">
                 <Label
                   htmlFor="password"
-                  className={`transition-all duration-500 ease-in-out`}>
+                  className={`transition-all duration-300 ease-in-out`}>
                   Password
                 </Label>
                 <Input
                   id="password"
                   type="password"
                   required
-                  className={`transition-all duration-500 ease-in-out`} />
+                  className={`transition-all duration-300 ease-in-out`} />
               </div>
               <Button
                 type="submit"
-                className={`w-full transition-all duration-500 ease-in-out`}>
+                className={`w-full transition-all duration-300 ease-in-out`}>
                 Sign Up
               </Button>
             </form>
             <Separator
-              className={`my-6 transition-all duration-500 ease-in-out`} />
+              className={`my-6 transition-all duration-300 ease-in-out`} />
             <div
-              className="flex flex-col items-center gap-2 transition-all duration-500 ease-in-out">
+              className="flex flex-col items-center gap-2 transition-all duration-300 ease-in-out">
               <Button
                 variant="outline"
-                className={`w-full transition-all duration-500 ease-in-out`}>
+                className={`w-full transition-all duration-300 ease-in-out`}>
                 <GithubIcon
-                  className={`mr-2 h-4 w-4 transition-all duration-500 ease-in-out`} />
+                  className={`mr-2 h-4 w-4 transition-all duration-300 ease-in-out`} />
                 Sign up with GitHub
               </Button>
               <Button
                 variant="outline"
-                className={`w-full transition-all duration-500 ease-in-out`}>
+                className={`w-full transition-all duration-300 ease-in-out`}>
                 <ChromeIcon
-                  className={`mr-2 h-4 w-4 transition-all duration-500 ease-in-out`} />
+                  className={`mr-2 h-4 w-4 transition-all duration-300 ease-in-out`} />
                 Sign up with Google
               </Button>
             </div>
             <div
-              className={`mt-4 text-center text-sm transition-all duration-500 ease-in-out`}>
+              className={`mt-4 text-center text-sm transition-all duration-300 ease-in-out`}>
               Already have an account?{" "}
               <button
                 type="button"
-                className={`font-medium underline underline-offset-4 transition-all duration-500 ease-in-out`}
+                className={`font-medium underline underline-offset-4 transition-all duration-300 ease-in-out`}
                 onClick={() => setIsSignup(false)}>
                 Log in
               </button>
@@ -133,21 +133,21 @@ export function AccountPage() {
         ) : (
           <div>
             <div
-              className={`mb-6 text-center transition-all duration-500 ease-in-out`}>
+              className={`mb-6 text-center transition-all duration-300 ease-in-out`}>
               <h1
-                className={`text-3xl font-bold transition-all duration-500 ease-in-out`}>
+                className={`text-3xl font-bold transition-all duration-300 ease-in-out`}>
                 Log In
               </h1>
               <p
-                className={`text-muted-foreground transition-all duration-500 ease-in-out`}>
+                className={`text-muted-foreground transition-all duration-300 ease-in-out`}>
                 Enter your credentials to access your account
               </p>
             </div>
-            <form className="space-y-4 transition-all duration-500 ease-in-out">
-              <div className="space-y-2 transition-all duration-500 ease-in-out">
+            <form className="space-y-4 transition-all duration-300 ease-in-out">
+              <div className="space-y-2 transition-all duration-300 ease-in-out">
                 <Label
                   htmlFor="email"
-                  className={`transition-all duration-500 ease-in-out`}>
+                  className={`transition-all duration-300 ease-in-out`}>
                   Email
                 </Label>
                 <Input
@@ -155,35 +155,35 @@ export function AccountPage() {
                   type="email"
                   placeholder="m@example.com"
                   required
-                  className={`transition-all duration-500 ease-in-out`} />
+                  className={`transition-all duration-300 ease-in-out`} />
               </div>
-              <div className="space-y-2 transition-all duration-500 ease-in-out">
+              <div className="space-y-2 transition-all duration-300 ease-in-out">
                 <Label
                   htmlFor="password"
-                  className={`transition-all duration-500 ease-in-out`}>
+                  className={`transition-all duration-300 ease-in-out`}>
                   Password
                 </Label>
                 <Input
                   id="password"
                   type="password"
                   required
-                  className={`transition-all duration-500 ease-in-out`} />
+                  className={`transition-all duration-300 ease-in-out`} />
               </div>
               <Button
                 type="submit"
-                className={`w-full transition-all duration-500 ease-in-out`}>
+                className={`w-full transition-all duration-300 ease-in-out`}>
                 Log In
               </Button>
             </form>
             <Separator
-              className={`my-6 transition-all duration-500 ease-in-out`} />
+              className={`my-6 transition-all duration-300 ease-in-out`} />
             <div
-              className="flex flex-col items-center gap-2 transition-all duration-500 ease-in-out">
+              className="flex flex-col items-center gap-2 transition-all duration-300 ease-in-out">
               <Button
                 variant="outline"
-                className={`w-full transition-all duration-500 ease-in-out`}>
+                className={`w-full transition-all duration-300 ease-in-out`}>
                 <GithubIcon
-                  className={`mr-2 h-4 w-4 transition-all duration-500 ease-in-out`} />
+                  className={`mr-2 h-4 w-4 transition-all duration- ease-in-out`} />
                 Log in with GitHub
               </Button>
               <Button
