@@ -196,7 +196,7 @@ export function AccountPage() {
             </div>
             <div
               className={`mt-4 text-center text-sm transition-all duration-500 ease-in-out`}>
-              Don\'t have an account?{" "}
+              Don`t have an account?{" "}
               <button
                 type="button"
                 className={`font-medium underline underline-offset-4 transition-all duration-500 ease-in-out`}
