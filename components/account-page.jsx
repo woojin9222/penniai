@@ -38,9 +38,9 @@ export function AccountPage() {
     const { setTheme } = useTheme()
   return (
     (<div
-      className={`flex min-h-[100dvh] flex-col items-center justify-center bg-background transition-all duration-500 ease-in-out`}>
+      className={`flex min-h-[100dvh] flex-col items-center justify-center bg-background transition-all duration-500 ease-in-out transition-background `}>
       <div
-        className={`w-full max-w-md rounded-lg border border-input bg-card p-6 shadow-lg transition-all duration-500 ease-in-out`}>
+        className={`w-full max-w-md rounded-lg border border-input bg-card p-6 shadow-lg transition-all duration-500 ease-in-out transition-background`}>
         {isSignup ? (
           <div>
             <div className="mb-6 text-center">
