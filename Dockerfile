@@ -12,7 +12,7 @@ COPY package*.json ./
 
 # Install and build
 RUN npm install
-RUN npm build
+RUN npm run build
 
 # Expose port
 EXPOSE 3000
