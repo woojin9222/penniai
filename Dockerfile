@@ -6,7 +6,7 @@ COPY .. ./
 # Install git, make
 RUN apk add --no-cache git make
 
-WORKDIR /app
+WORKDIR /penniai
 
 COPY package*.json ./
 
