@@ -6,8 +6,6 @@ COPY ./ ./
 # Install git, make
 RUN apk add git make
 
-# Run pre-install script
-RUN make pre-install
 
 # Install and build
 RUN yarn install --frozen-lockfile
