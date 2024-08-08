@@ -1,14 +1,7 @@
 FROM node:18-alpine
 
 # Set working directory
-COPY .. ./
-
-# Install git, make
-RUN apk add --no-cache git make
-
-WORKDIR /penniai
-
-COPY package*.json ./
+COPY ./ ./
 
 # Install and build
 RUN npm install
