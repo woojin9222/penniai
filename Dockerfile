@@ -4,7 +4,7 @@ FROM node:18-alpine
 COPY ./ ./
 
 # Install and build
-RUN npm install
+RUN npm ci
 RUN npm run build
 
 # Expose port
