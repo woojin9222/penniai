@@ -1,5 +1,5 @@
 {
-  "name": "with-turbopack",
+  "name": "penni-front",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,18 +14,33 @@
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.424.0",
+    "lucide-react": "^0.426.0",
     "next": "14.2.5",
     "next-themes": "^0.3.0",
-    "react": "^18.3.1",
+    "react": "^18",
     "react-dom": "^18",
-    "tailwind-merge": "^2.4.0"
+    "sass": "^1.77.8",
+    "sharp": "^0.33.4",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "eslint": "^8",
+    "@eslint/js": "^9.8.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.0.0",
     "eslint-config-next": "14.2.5",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.35.0",
+    "globals": "^15.8.0",
     "postcss": "^8",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.5",
     "tailwindcss": "^3.4.1",
-    "tailwindcss-animate": "^1.0.7"
+    "typescript": "^5",
+    "typescript-eslint": "^7.18.0"
   }
 }
