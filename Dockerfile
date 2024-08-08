@@ -4,6 +4,7 @@ FROM node:18-alpine
 COPY ./ ./
 
 # Install and build
+COPY package*.json ./
 RUN npm ci
 RUN npm run build
 
